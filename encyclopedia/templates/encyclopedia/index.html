@@ -1,0 +1,19 @@
+{% extends "encyclopedia/base.html" %}
+
+
+{% block title %}
+    Home
+{% endblock title %}
+
+
+{% block content %}
+    <h1>Main Page</h1>
+    <ol>
+        {% for obj  in qs %}
+        <li>{{obj}}</li>
+        {% endfor %}
+    </ol>
+    
+        
+{% endblock content %}
+    
