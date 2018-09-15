@@ -20,7 +20,7 @@ class Question(models.Model):
     user     = models.ForeignKey(to=User, on_delete=models.CASCADE)
     category = models.ManyToManyField(to=Category)
     question = models.CharField(blank=False, max_length=250)
-    
+    weight   = models.IntegerField(default=1)
 
 
     def __str__(self):
