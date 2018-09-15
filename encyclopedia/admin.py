@@ -11,7 +11,7 @@ class AnswerInline(admin.TabularInline):
 
     model = Answer
     min_num = 1
-    max_num = 5
+    max_num = 4
 
 
 

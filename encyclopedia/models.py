@@ -39,3 +39,6 @@ class Answer(models.Model):
 
     def __str__(self):
         return self.text
+    
+    class Meta:
+        order_with_respect_to = 'question'
